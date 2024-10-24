@@ -1,0 +1,12 @@
+.itemListContainer {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    color: #07404B;
+    text-shadow:
+    -1px -1px 0 #FFDDD2,
+    1px -1px 0 #FFDDD2,
+    -1px 1px 0 #FFDDD2,
+    1px 1px 0 #FFDDD2;
+}

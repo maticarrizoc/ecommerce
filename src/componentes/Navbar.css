@@ -1,0 +1,10 @@
+nav{
+    background: transparent;
+    width: 100%;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+}

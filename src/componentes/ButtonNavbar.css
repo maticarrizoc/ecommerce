@@ -1,0 +1,12 @@
+li{
+    list-style: none;
+    background: transparent;
+}
+
+a{
+    color: #83C5BE;
+    background: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}

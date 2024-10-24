@@ -1,9 +1,13 @@
+import Header from './componentes/Header'
+import ItemListContainer from './componentes/ItemListContainer'
+
 import './App.css'
 
 function App() {
   return (
     <>
-      <h1>Hola React</h1>
+      <Header />
+      <ItemListContainer texto="Bienvenidos a mi e-commerce"/>
     </>
   )
 }
