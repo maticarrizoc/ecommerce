@@ -1,0 +1,38 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    border: 2px solid #07404B;
+    border-radius: 5px;
+}
+
+.item h4 {
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis; 
+    font-size: 22px;
+}
+.item img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 5px;
+}
+.item p {
+    font-size: 18px;
+}
+
+.detailButton {
+    color: #83C5BE;
+    background: #07404B;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}

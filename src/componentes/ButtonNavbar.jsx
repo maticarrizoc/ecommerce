@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import './ButtonNavbar.css';
 
-const ButtonNavbar = ({texto, href}) => {
+const ButtonNavbar = ({ texto, href }) => {
     return (
         <>
-            <a href={href}>{texto}</a>
+            <Link to={href}>{texto}</Link>
         </>
     );
 };

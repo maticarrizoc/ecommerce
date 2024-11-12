@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
-import CartWidget from "./CartWidget";
 import logoEcommerce from "../assets/ecommerce3.svg";
 
 import './Header.css';
@@ -7,9 +7,9 @@ import './Header.css';
 const Header = () => {
     return (
         <header>
-            <a href="/index.html"><img src={logoEcommerce} alt="Logo Ecommerce" /></a>
+            <Link to="/"><img src={logoEcommerce} alt="Logo Ecommerce" /></Link>
             <Navbar />
-            <CartWidget />
+            
         </header>
     );
 }

@@ -1,0 +1,24 @@
+.itemCountSection{
+    height: 40px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.itemCountButton{
+    color: #83C5BE;
+    background: #07404B;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 2px;
+    border: none;
+    border-radius: 5px;
+}
+.itemCount{
+    color:  #07404B;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}

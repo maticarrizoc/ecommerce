@@ -1,8 +1,14 @@
+import { useParams } from 'react-router-dom';
+import ItemList from './ItemList';
 import './ItemListContainer.css';
-const ItemListContainer = (props) => {
+
+const ItemListContainer = ({ texto }) => {
+    const { categoryId } = useParams();
+
     return (
         <div className='itemListContainer'>
-            <h1>{props.texto}</h1>
+            <h1>{texto}</h1>
+            <ItemList categoryId={categoryId} />
         </div>
     );
 }
