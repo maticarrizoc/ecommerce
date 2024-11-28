@@ -6,11 +6,8 @@ import {
     getDoc,
     getDocs,
     collection,
-    query,
-    where,
     addDoc,
     updateDoc,
-    writeBatch,
   } from 'firebase/firestore';
 
 // TODO: Add SDKs for Firebase products that you want to use

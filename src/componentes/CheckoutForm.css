@@ -1,0 +1,26 @@
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5vh 20vh;
+    gap: 5vh;
+    color: #07404B;
+    font-size: 16px;
+    font-weight: 600;
+}
+.checkout-form input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #07404B;
+    border-radius: 5px;
+}
+
+.order-success {
+    color: #07404B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    gap: 5vh;
+    
+}

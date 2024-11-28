@@ -9,6 +9,8 @@ const ItemDetail = ({ item }) => {
     const [selectedQuantity, setSelectedQuantity] = useState(1);
     const { addToCart } = useCart();
 
+    console.log(item); 
+
     return (
         <div className="item-detail">
             <h2>{item.title}</h2>
@@ -18,6 +20,7 @@ const ItemDetail = ({ item }) => {
                     <p>Categoría: {item.category}</p>
                     <p>Precio: ${item.price}</p>
                     <p>Stock disponible: {item.stock}</p>
+                    <p>{item.id}</p>
 
                     <ItemCount
                         stock={item.stock}

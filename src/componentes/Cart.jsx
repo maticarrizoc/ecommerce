@@ -1,6 +1,7 @@
-import React from 'react';
-import useCart from '../hooks/useCart';
-import './Cart.css';
+import React from 'react'
+import useCart from '../hooks/useCart'
+import { Link } from 'react-router-dom'
+import './Cart.css'
 
 const Cart = () => {
     const { cart, removeItem, updateItemQuantity, getTotal, clearCart } = useCart();
@@ -21,23 +22,23 @@ const Cart = () => {
                                     <p>Stock: {product.stock}</p>
                                     <div className="cart-item-actions">
                                         Cantidad:
-                                        <button 
-                                            onClick={() => updateItemQuantity(product.id, product.quantity - 1)} 
-                                            disabled={product.quantity <= 1} 
+                                        <button
+                                            onClick={() => updateItemQuantity(product.id, product.quantity - 1)}
+                                            disabled={product.quantity <= 1}
                                             className="cartItemButton"
                                         >
                                             <i className="bi bi-dash"></i>
                                         </button>
                                         <span className='cartSpam'>{product.quantity}</span>
-                                        <button 
-                                            onClick={() => updateItemQuantity(product.id, product.quantity + 1)} 
-                                            disabled={product.quantity >= product.stock} 
+                                        <button
+                                            onClick={() => updateItemQuantity(product.id, product.quantity + 1)}
+                                            disabled={product.quantity >= product.stock}
                                             className="cartItemButton"
                                         >
                                             <i className="bi bi-plus"></i>
                                         </button>
-                                        <button 
-                                            onClick={() => removeItem(product.id)} 
+                                        <button
+                                            onClick={() => removeItem(product.id)}
                                             className="cartItemButton"
                                         >
                                             <i className="bi bi-trash"></i>
@@ -50,7 +51,7 @@ const Cart = () => {
                     <div className="cart-summary">
                         <span className='cartSpam'>Total del Carrito: ${getTotal()}</span>
                         <button onClick={clearCart} className="cartItemButton">Vaciar Carrito</button>
-                        <button className="cartItemButton">Finalizar Compra</button>
+                        <Link to={`/checkout`} className="cartItemButton">Finalizar Compra</Link>
                     </div>
                 </>
             ) : (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useFilter } from '../hooks/useFilter';
-// import { promesa } from '../asyncMock.js';
+
 import {
     getProducts
 } from '../firebase/firebase';
