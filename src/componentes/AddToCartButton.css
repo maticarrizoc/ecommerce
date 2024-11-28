@@ -1,0 +1,10 @@
+.AddToCartButton{
+    color: #83C5BE;
+    background: #07404B;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 2px;
+    border: none;
+    border-radius: 5px;
+}

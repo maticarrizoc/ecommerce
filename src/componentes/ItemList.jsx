@@ -1,36 +1,26 @@
 import { useEffect, useState } from 'react';
 import { useFilter } from '../hooks/useFilter';
 // import { promesa } from '../asyncMock.js';
+import {
+    getProducts
+} from '../firebase/firebase';
 import Item from "./Item";
 
 import './ItemList.css';
 
 const ItemList = ({ categoryId }) => {
 
-    // const [items, setItems] = useState([]);
-
-    // useEffect(() => {
-    //     promesa.then((respuesta) => {
-    //         setItems(respuesta);
-    //       });
-    //     }, []);
-
-    const [items, setItems] = useState([]);
+    const [myProds, setMyProds] = useState([]);
 
     useEffect(() => {
-        fetch(
-            'https://fakestoreapi.com/products'
-        )
-            .then((respuesta) => respuesta.json())
-            .then((datos) => setItems(datos))
-            .catch((error) => console.log(error));
+        getProducts().then((products) => setMyProds(products));
     }, []);
 
-    const filteredItems = useFilter(items, 'category', categoryId);
+    const filteredItems = useFilter(myProds, 'category', categoryId);
 
     return (
         <>
-            {filteredItems.map((item) => (
+            {filteredItems && filteredItems.map((item) => (
                 <Item key={item.id} item={item} />
             ))}
         </>

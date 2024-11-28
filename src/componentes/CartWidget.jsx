@@ -1,11 +1,17 @@
-import './CartWidget.css';
+import './CartWidget.css'
+import { Link } from 'react-router-dom';
+import useCart from '../hooks/useCart'
 
-const CartWidget = () => {
+const CartWidget = ({ href }) => {
+    const { getTotalQuantity } = useCart();
+
     return (
-        <div className="cartWidget">
-            <span>0</span>
-            <i class="bi bi-cart3"></i>
-        </div>
+        <Link to={href}>
+            <div className="cartWidget">
+                <span>{getTotalQuantity()}</span>
+                <i className="bi bi-cart3"></i>
+            </div>
+        </Link>
     );
 }
 

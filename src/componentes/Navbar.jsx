@@ -8,19 +8,19 @@ const Navbar = () => {
         <nav>
             <ul>
                 <li>
-                    <ButtonNavbar texto="Electronica" href="/category/electronics" />
+                    <ButtonNavbar texto="Lavarropas" href="/category/lavarropas" />
                 </li>
                 <li>
-                    <ButtonNavbar texto="Joyas" href="/category/jewelery" />
+                    <ButtonNavbar texto="Heladeras" href="/category/heladeras" />
                 </li>
                 <li>
-                    <ButtonNavbar texto="Ropa Hombre" href="/category/men's clothing" />
+                    <ButtonNavbar texto="Microondas" href="/category/microondas" />
                 </li>
                 <li>
-                    <ButtonNavbar texto="Ropa Mujer" href="/category/women's clothing" />
+                    <ButtonNavbar texto="Pequeños Electrodomesticos" href="/category/pequeños electrodomesticos" />
                 </li>
                 <li>
-                    <CartWidget />
+                    <CartWidget href="/cart"/>
                 </li>
             </ul>
         </nav>

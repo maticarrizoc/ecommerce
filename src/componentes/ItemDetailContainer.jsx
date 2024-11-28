@@ -1,20 +1,16 @@
-import { useEffect, useState } from 'react';
-// import { promesa } from '../asyncMock.js';
 import { useParams } from 'react-router-dom';
-import ItemDetail from "./ItemDetail";
-
-// import './ItemDetailContainer.css';
+import { useState, useEffect } from 'react';
+import { getSingleProduct } from '../firebase/firebase';
+import ItemDetail from './ItemDetail';
 
 const ItemDetailContainer = () => {
     const { id } = useParams();
-
-    const [item, setItem] = useState([]);
+    const [item, setItem] = useState(null);
 
     useEffect(() => {
-        fetch(`https://fakestoreapi.com/products/${id}`)
-            .then((response) => response.json())
-            .then((data) => setItem(data))
-            .catch((error) => console.log(error));
+        if (id) {
+            getSingleProduct(id).then((product) => setItem(product));
+        }
     }, [id]);
 
     return (

@@ -21,8 +21,8 @@
 }
 
 .item-content img{    
-    width: 200px;
-    height: 200px; 
+    width: auto;
+    height: 300px; 
     border-radius: 5px;
 }
 

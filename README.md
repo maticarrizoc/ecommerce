@@ -1,8 +1,15 @@
-# React + Vite
+# Proyecto Final React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Reseña de proyecto:
+El proyecto trata de un ecommerce que cuenta con base de datos no relacional en Firebase
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas:
+- React Router Dom
+- Firebase
+- 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visita la web
+[ElectodomesticosMendoza](https://ecommerce.com)
+
+### ScreenShots de la web
+![Captura 1]()

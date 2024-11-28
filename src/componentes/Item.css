@@ -18,8 +18,8 @@
     font-size: 22px;
 }
 .item img {
-    width: 150px;
-    height: 150px; 
+    width: auto;
+    height: 180px; 
     border-radius: 5px;
 }
 .item p {
